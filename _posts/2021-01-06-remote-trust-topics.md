@@ -1,10 +1,13 @@
 ---
 layout: post
-title:  "Connecting with people in a virtual world"
-#date:   2020-00-00 00:00:00 +0000
+title:  "Remote trust"
+date:   2021-01-06 00:00:00 +0000
 tags: []
 comments: true
 ---
+
+> [!NOTE]
+> I'm publishing this post years after I drafted it and in an incomplete state. I don't disagree with much of what I wrote, and like the previous posts think it functions as an interesting snapshot of what I was thinking and feeling while still very much in the midst of remote-heavy pandemic work culture.
 
 This personal revelation has had me wondering lately about the importance of personal connection, especially with my team members and my customers, and what this means in 2020 when our only communication medium is digital. Most people crave social connection, myself included, and we suffer when that need isn't met.
 
