@@ -226,3 +226,14 @@ div.col-sm-3 {
     display: block;
   }
 }
+
+/* Light and Dark Mode Styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
