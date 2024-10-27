@@ -30,8 +30,11 @@ This gives me the bare minimum level of social trust I need to make a meaningful
 In the worst case, the other person has their camera off. I maybe see a picture of an avatar, or of their face in some old profile picture. Often I can hear them clacking away at the keyboard, and I know they aren't giving me (or whoever else is speaking) their full attention. This is a big downer, and though I have at times ribbed people in private messages to at least mute themselves when typing on their mechanical keyboards
 
 > *Consistency is the most important thing*
+
 > Be relentlessly, forever, inhumanly consistent
+
 > Consistency of mode, means, amount, timing
+
 > *Now is not the time to experiment*
 
 That this advice tells us to be possessed of an *inhuman* character gives us fair warning - you will try and you will fail! Nonetheless I am more and more finding this advice to be critically important and true. Reflecting on my most notable communication failures over the past year, one common thread is that my worst mistakes tend to occur when I try something new, abruptly and without advance notice. I like to be able to "wing it" sometimes when I feel like I've reached that magic balance of confidence and capability, and in my experience, this usually works for me in normal, in-person meetings. However, the reasons this works for me in person - the body language I display and the body language I can read on others - is exactly the reason this fails so often digitally.
@@ -45,7 +48,9 @@ When others are talking, keep the pressure low and always leave a clear exit. Do
 ## Intimacy
 
 > You can only create intimacy with fewer than 6 people
+
 > A good team size is however many people you can feed with 2 large pizzas
+
 > Information about human intent comes through via body language
 
 *Communication over digital channels causes "emotional compression" - but what gets lost?*
@@ -59,7 +64,7 @@ Remember that you set an example by your behavior. I always try to keep my camer
 ## Feedback and negativity
 
 > We take information much more negatively when it comes to us virtually than face to face
->
+
 > In person, you get an instant read, instant feedback...no one assumes, "they think that's such a good idea they're stunned into silence". We think people find us contemptible in those micropauses.
 
 When intent isn't clear, how do we keep confident, and how can we provide others with confidence as they speak?
