@@ -41,7 +41,7 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Update config with secrets
         run: |
-          echo "secret: ${{secrets.RECAPTCHA_SECRET}}" >> _config.yml
+          echo 'secret: "${{secrets.RECAPTCHA_SECRET}}"' >> _config.yml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
