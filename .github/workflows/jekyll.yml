@@ -45,6 +45,7 @@ jobs:
         shell: bash
         run: |
           echo "  secret: '$RECAPTCHA_SECRET'" >> _config.yml
+          cat _config.yml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
