@@ -44,7 +44,7 @@ jobs:
           RECAPTCHA_SECRET: ${{secrets.RECAPTCHA_SECRET}}
         shell: bash
         run: |
-          echo -e "\n  secret: '$RECAPTCHA_SECRET'" >> _config.yml
+          echo -e "\n  secret: $RECAPTCHA_SECRET" >> _config.yml
           cat _config.yml
       - name: Setup Pages
         id: pages
