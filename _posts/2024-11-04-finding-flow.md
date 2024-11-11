@@ -3,8 +3,9 @@ layout: post
 title:  "Finding Flow as an Engineering Manager"
 date:   2024-11-04 00:00:00 +0000
 tags: []
-comments: true
 ---
+
+> Note: This post is the first in a series, and I consider it 'work in progress'. I will likely come back and rewrite this as I develop my thoughts on this topic.
 
 When leading a development team, I have two overriding concerns:
 
