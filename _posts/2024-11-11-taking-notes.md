@@ -55,7 +55,7 @@ Now, my workflow for organizing notes at work is:
 2. [Refile](https://orgmode.org/manual/Refile-and-Copy.html) notes as needed.
    - I have a very small hierarchy of .org docs to file notes into for long-term storage.
 
-I enjoy the benefits of this system, which is made by and for nerds like me. As my knowledge of Emacs (and my config!) improves, I get better at taking and organizing my notes! Org (2003) and Emacs (1976) are OLD, which means they are 1) stable and 2) vast in scope and depth. Unlike the other digital tools I'd used previously, Emacs is endlessly customizable, in a Lisp that I find easy to grock and write. So far any need I've had, there has been either an existing package for, or an easy function I can use or script on top of.
+I enjoy the benefits of this system, which is made by and for nerds like me. As my knowledge of Emacs ([and my config!](https://github.com/kcarta/.emacs.d)) improves, I get better at taking and organizing my notes! Org (2003) and Emacs (1976) are OLD, which means they are 1) stable and 2) vast in scope and depth. Unlike the other digital tools I'd used previously, Emacs is endlessly customizable, in a Lisp that I find easy to grock and write. So far any need I've had, there has been either an existing package for, or an easy function I can use or script on top of.
 
 Best of all, Org mode comes with rich functionality for tagging and sorting tasks and notes, and Emacs is loaded with tools for sifting and searching though text at lightning-speed. I've never been so fast at organizing notes and then finding them again later!
 
