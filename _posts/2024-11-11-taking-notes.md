@@ -100,6 +100,6 @@ This Shortcut starts a prompt / dictation and appends it to my todo.org file. I 
 
 ### 'Copy Clipping'
 
-I use this less at work than I do the 'Copy a Notion' shortcut, but it's still useful if there's clippings of documentation or a chat thread that I need to remember verbatim.
+I use this less at work than I do the 'Copy a Notion' shortcut at home, but it's still useful if there's clippings of documentation or a chat thread that I need to remember verbatim.
 
 ![Copy a Notion shortcut](/static/img/posts/copy-clipping.png)
