@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Musings from the Happiest Place on Earth"
+title:  "Musings from the Happiest City in the World"
 date:   2024-11-19 00:00:00 +0000
 tags: [non-software]
 ---
