@@ -6,7 +6,7 @@ permalink: /about/
 
 Thank you for visiting my site!
 
-I'm working as a software delivery manager [^1], having transitioned over from software engineer/architect roles. Now "well-seasoned" in the management side of software delivery, I finding myself constantly inspired with tough questions (and ocassionally, answers!), and so I've decided to use this blog as a place to nail down all my thoughts, publicly for whoever cares to read them. 
+I work as a software delivery manager [^1], having transitioned over from software engineer/architect roles. Now "well-seasoned" in the management side of software delivery, I find myself constantly inspired with tough questions (and ocassionally, answers!), and so I've decided to use this blog as a place to nail down all my thoughts, publicly for whoever cares to read them. 
 
 My burning questions typically revolve around *practical* agile/lean project delivery, particularly in the hostile and unforgiving enterprise space.
 
