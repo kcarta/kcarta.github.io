@@ -19,12 +19,18 @@ $text-detail-color: #777;
 $link-color: #2997d8;
 $link-hover-color: #253b80;
 
+$text-primary-color-dark-mode: #C8C3BC;
+$text-header-color-dark-mode: #CCC;
+$link-hover-color-dark-mode: #8BB0DD;
+$background-color-dark-mode: #111517;
+
 $line-color: #999;
 
 body {
   font-family: $text-primary-font;
   font-size: $text-primary-size;
   line-height: 1.5em;
+  color: $text-primary-color;
 }
 
 a {
@@ -213,6 +219,7 @@ div.col-sm-3 {
     max-width: 255px;
   }
 }
+
 @media (max-width: 768px) {
   div.col-sm-3 {
     margin-top: 30px;
@@ -224,3 +231,35 @@ div.col-sm-3 {
     display: block;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+	color: $text-primary-color-dark-mode;
+	background-color: $background-color-dark-mode;
+    }
+
+    .main-layout {
+	background-color: $background-color-dark-mode;
+    }
+
+    h1,
+    h2,
+    h3 {
+	color: $text-header-color-dark-mode;
+    }
+
+    a {
+	&:hover {
+	    color: $link-hover-color-dark-mode;
+	}
+    }
+
+    .social {
+	li a {
+	    &:hover {
+		color: #FFF;
+	    }
+	}
+    }
+}
+
