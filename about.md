@@ -12,8 +12,10 @@ My burning questions typically revolve around *practical* agile/lean project del
 
 There is some risk to airing my thoughts openly online, which I hope readers can respect - these are my *raw* thoughts, and I'm merely a practitioner getting through the day-to-day fight, so this is my space to reflect, learn, and hopefully grow.
 
+Some personal topics might arise, if I feel like getting something out of my brain and into writing.
+
 I'm still keeping my software developer spirit close, so expect a few stray technical posts as well.
 
-I always love having discussions, so please feel free to hit me up on LinkedIn or via a comment here!
+I always love having discussions, so please feel free to hit me up on LinkedIn or Bluesky or whatever!
 
-[^1]: A contentious term, I know! One topic for the backlog :)
+[^1]: A contentious term! One topic for the backlog :)
