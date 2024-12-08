@@ -5,7 +5,7 @@ date:   2024-12-07 00:00:00 +0000
 tags: [ai, tools, thoughts]
 ---
 
-In this post, I intend to show what I consider an ideal case - *with many caveats* - for using an LLM, here ChatGPT, to rapidly generate a working application from scratch. This is a follow-up to my thought-dump on [RAD with LLM's.]({% post_url 2024-11-18-rad-llms %}).
+In this post, I intend to show what I consider an ideal case - *with many caveats* - for using an LLM, here ChatGPT, to rapidly generate a working application from scratch. This is a follow-up to my thought-dump on [RAD with LLM's]({% post_url 2024-11-18-rad-llms %}).
 
 I will call this approach "RAD/LLM" because I am using prompts to an LLM to rapidly develop an application, based primarily on what I visually see and want in the running app.[^1]
 
