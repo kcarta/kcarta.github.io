@@ -5,7 +5,7 @@ date:   2024-12-07 00:00:00 +0000
 tags: [ai, tools, thoughts]
 ---
 
-In this post, I intend to show what I consider an ideal case - *with many caveats* - for using an LLM, here ChatGPT, to rapidly generate a working application from scratch.
+In this post, I intend to show what I consider an ideal case - *with many caveats* - for using an LLM, here ChatGPT, to rapidly generate a working application from scratch. This is a follow-up to my thought-dump on [RAD with LLM's.]({% post_url 2024-11-18-rad-llms %}).
 
 I will call this approach "RAD/LLM" because I am using prompts to an LLM to rapidly develop an application, based primarily on what I visually see and want in the running app.[^1]
 
@@ -134,7 +134,7 @@ For the rest of the post, I fell back to using GPT-4, which worked exactly as we
 I have no explanation for why GPT-4, which by [all metrics is a less capable model](https://www.vellum.ai/blog/llm-benchmarks-overview-limits-and-model-comparison), works so well with this approach, whereas 4o and Sonnet failed spectacularly. LLM's are weird beasts.
 
 My two hopes for the future of this approach:
-1. The incremental "improvements" made with the current leading models represents a "two steps forward, one step back" reality in which my LLM/RAD approach is momentarily not feasible, but where the next generation might inexplicabily enable it again.
+1. The incremental "improvements" made with the current leading models represents a "two steps forward, one step back" reality in which my LLM/RAD approach is momentarily not feasible, but where the next generation might inexplicably enable it again.
 2. Other leading models - perhaps those trained specifically for code generation - [CodeLamma/Phind](https://www.phind.com/blog/phind-model-beats-gpt4-fast) for example - could perform as well as GPT-4 does. I've used Phind before, but not with this approach. Might be worth further investigation.
 
 ## Back to the action
@@ -537,9 +537,9 @@ These tweaks took under a minute.
 
 Having done three rounds of generation, I have, in a little over five real-time minutes,[^8] gone from an idea to a fully-working prototype that I can see, use, and easily iterate on.
 
-Thank's to Flutter's hot reload & restart, most changes were visible in the running application immediately after I pasted (and patched) the generated code. At worst, I had to redeploy, which takes a handful of seconds, mostly waiting on Xcode build (so, I'd assume the redeploy is faster on any other platform...).
+Thanks to Flutter's hot reload & restart, most changes were visible in the running application immediately after I pasted (and patched) the generated code. At worst, I had to redeploy, which takes a handful of seconds, mostly waiting on Xcode build (so, I'd assume the redeploy is faster on any other platform...).
 
-This approach, where I facilitate and ChatGPT does the vast majority of the actual work, with some gentle prodding, is not *really* my 'endgame', *yet* - but it does feel absolutely **exhilirating** to be able to take an idea to working software so effectively.[^9]
+This approach, where I facilitate and ChatGPT does the vast majority of the actual work, with some gentle prodding, is not *really* my 'endgame', *yet* - but it does feel absolutely **exhilarating** to be able to take an idea to working software so effectively.[^9]
 
 What this feels like to me, is that I've used **cheat codes** to skip past all the boring boilerplate and frameworking I usually have to slog through, and that I don't care about when I'm just trying to get a working prototype on an idea. *If I had a nickel for every project that I never finished because I ended up sinking into the swamp of initial boilerplate and framework-wrangling... 😵*
 
@@ -549,7 +549,7 @@ Of course, there's still much to do, to get this app polished and delightful to 
 - Tweaking the styling and layout of the various header & title elements
 - Implementing fetching of additional emails (infinite scrolling), fetching new emails, and caching
 
-Having built a similar app using this same approach, but fetching from Gmail and using Firebase for auth, I know these are feasible within a reasonably quick timeframe.
+Having built a similar app using this same approach, but fetching from Gmail and using Firebase for auth, I know these are feasible within a reasonably quick time frame.
 
 I plan to write a follow-up post soon showing the final result and how long it took me to reach that state following my RAD/LLM approach.
 
@@ -565,7 +565,7 @@ I hope this demo has convinced you that it can be possible now for a single deve
 
 What I think differentiates this approach to others I've seen, is that I'm using off-the-shelf tools, not a specialized environment tailored specifically to AI-generating an application.
 
-I have always considered myself a relatively slow (methodical?) developer, so for me, this approach gives me a time boost at least an order of magnitude above what I could do if I were to write the application from scratch manually - a true game-changer and something approaching the advertized promise of these GenAI/LLM tools.
+I have always considered myself a relatively slow (methodical?) developer, so for me, this approach gives me a time boost at least an order of magnitude above what I could do if I were to write the application from scratch manually - a true game-changer and something approaching the advertised promise of these GenAI/LLM tools.
 
 For a taste of a larger application I built entirely with this RAD/LLM approach, see my [flash-cards-ru](https://github.com/kcarta/flash-cards-ru) repo. This approach let me rapidly build a rich application with native iOS look & feel and of a size & complexity that I would never have attempted otherwise. I also used GPT-4 to generate all of the vocabulary files and grammar rules, also something I would never have been able to do in a reasonable time-frame myself.
 
@@ -579,7 +579,7 @@ For a taste of a larger application I built entirely with this RAD/LLM approach,
 
 [^5]: For this reason, I found working with Rails, as much as I love it, to be very error-prone after the first round or so of code generation. Rails is anyways so productive for an experienced developer that I reckon the time savings would be minimal using AI.
 
-[^6]: 'Very successfuly' meaning that the LLM generates >90% of the code successfully, and I edit the rest or nudge the LLM with re-prompting. Any less than 90% makes this approach infeasible.
+[^6]: 'Very successsfuly' meaning that the LLM generates >90% of the code successfully, and I edit the rest or nudge the LLM with re-prompting. Any less than 90% makes this approach infeasible.
 
 [^7]: I forgot to mention, ChatGPT forgot to have me add the `.env` file as an asset in `pubspec.yaml`
 
