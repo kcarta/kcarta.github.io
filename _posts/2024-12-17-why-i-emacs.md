@@ -23,7 +23,6 @@ Vim taught me some important lessons:
 - Stability, community, and stewardship are good predictors of quality.
 - Good editors teach you good habits, the very best teach you habits that are generalizable.
 - Good editors are customizable.
-- Good editors are fun to use. Customizing & mastering them should be joyful.
 
 ## The Long Journey
 
@@ -49,7 +48,7 @@ With my own (mostly stolen) config in place, I was off to the races, and have ne
 
 ## What Emacs has taught me
 
-In addition to the lessons I learned from Vim, Emacs has taught me that the best editors are fully open to customization. I *should* feel powerful customizing my editor - this is my main tool for interacting with the world,[^2] why shouldn't it reward me for tailoring it to my specific needs (& whims)!?
+In addition to the lessons I learned from Vim, Emacs has taught me that the best editors are fully open to customization, and customization and mastery should be joyful. I *should* feel powerful customizing my editor - this is my main tool for interacting with the world,[^2] why shouldn't it reward me for tailoring it to my specific needs (& whims)!?
 
 Now that I have my religious conversion story out, I'm going to write an ongoing series about *how* I Emacs. I think it might be useful for anyone on or considering a similar path.
 
