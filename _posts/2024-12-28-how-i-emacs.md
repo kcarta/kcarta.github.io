@@ -15,7 +15,7 @@ I'll divide this into sections, ordered roughly by the amount I've spent on each
 
 The killer app for me has always been [Org mode](https://orgmode.org/features.html). At work, I always have my main notes.org file open, and use capture and refile to sort my to-dos and quick notes as I go through the day. When focusing on a single customer/project, I usually have that org file open as well.
 
-I'll reserve a longer writeup on my Org use for a future post, especially in a few weeks when I'm back at work at in my usual workflow again. In short, Emacs + Org mode is an absurdly powerful note-taking toolset, and I know I've only scratched the surface with my use so far.
+I'll reserve a longer writeup on my Org use for a future post, especially in a few weeks when I'm back at work and in my usual workflow again. In short, Emacs + Org mode is an absurdly powerful note-taking toolset, and I know I've only scratched the surface with my use so far.
 
 ## Writing this blog
 
