@@ -17,14 +17,16 @@ social:
       link: "https://github.com/kcarta"
     - icon: fa-brands fa-bluesky
       link: "https://bsky.app/profile/krc22.bsky.social"
+    - icon: fa-rss
+      link: /feed.xml
 
 urls:
     - text: About
       url: /about/
     - text: Now
       url: /now/
-    - text: XML Feed
-      url: /feed.xml
+    #- text: RSS Feed (Emacs)
+      #url: /feed-emacs.xml
 
 url: "https://www.kriscarta.com"
 baseurl: ""

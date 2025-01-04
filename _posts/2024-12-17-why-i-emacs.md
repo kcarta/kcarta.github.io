@@ -2,7 +2,7 @@
 layout: post
 title:  "Why I Emacs"
 date:   2024-12-17 00:00:00 +0000
-tags: [tools]
+tags: [tools,emacs]
 ---
 I LOVE text editors. 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "How I Emacs (#1)"
 date:   2024-12-28 00:00:00 +0000
-tags: [tools]
+tags: [tools,emacs]
 ---
 
 This first post is about how I, as a beginner, have been using Emacs.
