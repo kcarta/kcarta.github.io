@@ -7,15 +7,12 @@ tags: [emacs]
 
 At home, we're tying to re-establish our grocery shopping routine. The cornerstone of this routine is bi-weekly meal planning and shopping - usually on Sundays/Thursdays).
 
-For many years the steps have gone:
-1. Open up Notion and go into our shared family workspace
-2. Make a new page called something like "Meal Planning Week 2"
-3. Do some page setup with a section for each day of the week 
-   - At one point we had templates for this, we got lazy and stopped using them
-4. Write down what we'll eat on each day
-   - We have a recipe bank for inspiration 🤔
-5. For each meal planned, list out the items we need to buy in a shopping run
-6. (List out anything else we need to get for the week, like detergent)
+For many years the steps have been:
+1. Open up Notion
+1. Make a new page like "Meal Plan: Week 2"
+1. Write down what we'll eat on each day
+1. For each meal, list out the items we need to get for it
+1. (Add anything else we need to get for the week, like detergent)
 
 The end result looks something like this:
 ![Meal plan in Notion](/static/img/posts/meal-plan-notion.png)
@@ -24,17 +21,17 @@ The end result looks something like this:
 
 Now we have our meal plan written down, the items to go into a shopping list.
 
-For the past year-or-so we've been successfully using a shared "Shopping" list in Apple Reminders. The UX is great and it all works so well when we're in the shop.[^1] [^2] We also have widgets on our phones so we can check the list with some quick gestures.
+We use a shared "Shopping" list in Apple Reminders. The UX is great, and it all works so well when we're actively shopping.[^1] [^2] We also have widgets on our phones so we can check the list with some quick gestures.
 
 The irritating part is getting the items into the shopping list. I never found a satisfying way to automate this part 😣[^3] (until now!) .
 
-At an impasse, I gave up, and have been awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this feels *wrong* every time I do it!
+At an impasse, I eventually gave up, and have been awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this feels *wrong* every time I do it!
 
-On a lucky chance, I came across [this page showing how to invoke AppleScript from Emacs](https://irreal.org/blog/?p=4865) (because of course that's in Emacs!). 
+Recently I came across [this page showing how to invoke AppleScript from Emacs](https://irreal.org/blog/?p=4865) (because of course that's in Emacs!). 
 
-Now, I loathe AppleScript far more than is probably healthy, but sometimes it's the right (i.e. only) tool for the job.
+Now - I loathe AppleScript far more than is probably healthy, but sometimes it's the right (i.e. only) tool for the job.
 
-After many iterations and some consultations with my private Emacs tutor, ChatGPT, I was able to scratch together a function that could add an item into my Shopping list:
+After many iterations and some consultations with my private Emacs tutor, ChatGPT, I scratched together a function to add an item into the Shopping list in Apple Reminders:
 
 > Note: if this code can be improved, let me know! I'm still a beginner here and guidance is greatly appreciated.
 
@@ -53,7 +50,7 @@ After many iterations and some consultations with my private Emacs tutor, ChatGP
     (shell-command (format "osascript -e '%s'" as-command))))
 ```
 
-I ended up going with `shell-command` and `osascript` because I couldn't get past permissions blockers between Emacs and Reminders when using `do-applescript` - I really spent a lot of time troubleshooting this before finally giving up 😞
+I ended up going with `shell-command` and `osascript` because I couldn't get past permissions issues between Emacs and Reminders when using `do-applescript` - I spent a lot of time troubleshooting this before finally giving up 😞
 
 With this milestone reached, I knew there was just one step remaining: get Emacs to process the shopping list items.
 
@@ -110,7 +107,7 @@ Now, I have a new routine:
 4. Run the function to send the list items to Apple Reminders:
 ![Command to send meal plan items to Apple Reminders](/static/img/posts/meal-plan-command.png)
 
-5. Go shopping!
+5. Go shopping! 🛒
 ![Shopping list in Apple Reminders](/static/img/posts/meal-plan-reminders.png)
 
 [^1]: As much as I otherwise love it, Notion has never been 'lightweight' to use on mobile, and is often a real distraction in cases where I *just need* something, like a checklist to quickly reference and update.
