@@ -6,16 +6,10 @@ permalink: /about/
 
 Thank you for visiting my site!
 
-I work as a software delivery manager [^1], having transitioned over from software engineer/architect roles. Now "well-seasoned" in the management side of software delivery, I find myself constantly inspired with tough questions (and ocassionally, answers!), and so I've decided to use this blog as a place to nail down all my thoughts, publicly for whoever cares to read them. 
+I work as a software delivery lead (i.e. a kind of engineering manager but in consulting). I transitioned over to this after being in a variety of software engineer/architect roles. Previous to all of this, I got a MSc in Sociology and dabbled in local politics. There's quite a few circles in the venn diagram of my interests, all intersecting neatly on "software".
 
-My burning questions typically revolve around *practical* agile/lean project delivery, particularly in the hostile and unforgiving enterprise space.
+My burning topics of late are AI, software project delivery (in enterprise!), Emacs, and whatever nifty software lifehacks I can whip together and are worth sharing.
 
-There is some risk to airing my thoughts openly online, which I hope readers can respect - these are my *raw* thoughts, and I'm merely a practitioner getting through the day-to-day fight, so this is my space to reflect, learn, and hopefully grow.
-
-Some personal topics might arise, if I feel like getting something out of my brain and into writing.
-
-I'm still keeping my software developer spirit close, so expect a few stray technical posts as well.
+This site started as a way for me to pin down my thoughts on tough questions around project/product delivery, agility, consulting, tech leadership, and similar topics. Now, I use it more as a dumping ground for *all* of my thoughts, at least all that are tech related (as most are - at any given moment I'm *probably* thinking about software and how we use & work with it 👨🏻‍💻)
 
 I always love having discussions, so please feel free to hit me up on LinkedIn or Bluesky or whatever!
-
-[^1]: A contentious term! One topic for the backlog :)
