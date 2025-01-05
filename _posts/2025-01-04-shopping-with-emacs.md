@@ -25,7 +25,7 @@ We've started using a shared "Shopping" list in Apple Reminders. The UX is great
 
 The irritating part is getting the items into the shopping list. I struggled to find a satisfying way to automate this part 😣[^3] (until now!) .
 
-At an impasse, I had given up, and kept awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this feels *wrong* every time I did it!
+At an impasse, I had given up, and kept awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this felt *wrong* every time I did it!
 
 Recently I came across [this page showing how to invoke AppleScript from Emacs](https://irreal.org/blog/?p=4865) (because of course that's in Emacs!). 
 
