@@ -5,7 +5,7 @@ date:   2025-01-04 00:00:00 +0000
 tags: [emacs]
 ---
 
-At home, we're tying to re-establish our grocery shopping routine. The cornerstone of this routine is bi-weekly meal planning and shopping - usually on Sundays/Thursdays).
+At home, we're tying to re-establish a good weekly meal planning & grocery shopping routine.
 
 For many years the steps have been:
 1. Open up Notion
@@ -19,17 +19,17 @@ The end result looks something like this:
 
 ---
 
-Now we have our meal plan written down, the items to go into a shopping list.
+With the meal plan written down, now we need to make a shopping list.
 
-We use a shared "Shopping" list in Apple Reminders. The UX is great, and it all works so well when we're actively shopping.[^1] [^2] We also have widgets on our phones so we can check the list with some quick gestures.
+We've started using a shared "Shopping" list in Apple Reminders. The UX is great, and it all works quite well when we're actively shopping.[^1] [^2] We also have widgets on our phones so we can check the list with some quick gestures.
 
-The irritating part is getting the items into the shopping list. I never found a satisfying way to automate this part 😣[^3] (until now!) .
+The irritating part is getting the items into the shopping list. I struggled to find a satisfying way to automate this part 😣[^3] (until now!) .
 
-At an impasse, I eventually gave up, and have been awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this feels *wrong* every time I do it!
+At an impasse, I had given up, and kept awkwardly copy-pasting the ingredients from Notion over to Apple Reminders - of course this feels *wrong* every time I did it!
 
 Recently I came across [this page showing how to invoke AppleScript from Emacs](https://irreal.org/blog/?p=4865) (because of course that's in Emacs!). 
 
-Now - I loathe AppleScript far more than is probably healthy, but sometimes it's the right (i.e. only) tool for the job.
+I loathe AppleScript far more than is probably healthy, but sometimes it's the right - i.e. only - tool for the job.
 
 After many iterations and some consultations with my private Emacs tutor, ChatGPT, I scratched together a function to add an item into the Shopping list in Apple Reminders:
 
@@ -52,15 +52,15 @@ After many iterations and some consultations with my private Emacs tutor, ChatGP
 
 I ended up going with `shell-command` and `osascript` because I couldn't get past permissions issues between Emacs and Reminders when using `do-applescript` - I spent a lot of time troubleshooting this before finally giving up 😞
 
-With this milestone reached, I knew there was just one step remaining: get Emacs to process the shopping list items.
+With this milestone reached, there was just one step remaining: process the shopping list items, using the power of Emacs 🙌
 
 With a deal great more iterations and head-scratching, I managed to make a script that:
 1. Parses an Org buffer into an AST
 2. Gets all the list items from the AST
-3. Pushes the content of the list items into a list
+3. Gets the content of the list items and pushes it into a list
 4. For each item in the list of content, calls AppleScript to add it to the Apple Reminders "Shopping" list.
 
-> Sidebar: I'm still trying to figure out how I get a good reference for Emacs / library API's. I know I can look things up in Emacs, but if I don't know what to look up, then I have to go online and search around, and if I'm already online, then I don't want to go back to Emacs to complete my reference lookup - a catch-22. This [Org Element API](https://orgmode.org/worg/dev/org-element-api.html) is quite helpful and perhaps an exception to this complaint, but I still wish it were better organized and more detailed. [I'm used to things like this](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/aop/framework/autoproxy/target/AbstractBeanFactoryBasedTargetSourceCreator.html), where even if the subject is ridiculous, it's easy to figure out what I can do with it (if not always why).
+> Sidebar: The hardest part in my Emacs learning has been finding a good reference flow for Emacs / library API's. I know I can look things up in Emacs with C-h, but if I don't *know* what to look up, then I end up online and searching around aimlessly. This [Org Element API](https://orgmode.org/worg/dev/org-element-api.html) is quite helpful, but I wish I knew how to find it in Emacs and I still wish it were better organized and more detailed. [I'm used to things like this](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/aop/framework/autoproxy/target/AbstractBeanFactoryBasedTargetSourceCreator.html), where even if the subject is...arcane..., I'm presented with *everything* I need to know and with copious links to explore further, and everything here is usually 1:1 with the help my editor presents.
 
 The script:
 ```elisp
@@ -98,10 +98,10 @@ Now, I have a new routine:
 1. Make the Meal Plan in Notion as usual, with the lists of items we need to get at the store:
 ![Meal plan in Notion](/static/img/posts/meal-plan-notion.png)
 
-2. Copy-paste the entire Notion page into an Emacs buffer (even \*scratch\* works for this):
+2. Copy the entire Notion page and paste it into an Emacs buffer (even \*scratch\* works for this):
 ![Meal plan in Markdown](/static/img/posts/meal-plan-md.png)
 
-3. Convert Notion's Markdown into Org (not shown: a simple function I have to do this in the same buffer using a shell command to `pandoc`) :
+3. Convert Notion's Markdown into Org[^4]
 ![Meal plan in Org](/static/img/posts/meal-plan-org.png)
 
 4. Run the function to send the list items to Apple Reminders:
@@ -115,3 +115,5 @@ Now, I have a new routine:
 [^2]: Also, it's important to keep the meal planning in Notion, because my partner, as smart & wonderful as they otherwise are, is not about to start using some nerdy text editor (😿) or a half-baked app I've written myself (we have enough of those already). Much of our family planning, including our recipes, is also done in Notion.
 
 [^3]: At least one that doesn't require adding an additional service promising to synchronize the two platforms - no thanks!
+
+[^4]: Not shown: a simple function I have to convert md->org in the same buffer, using a shell command to `pandoc`. Also, I did have the thought to just process a md buffer, but I don't know of a good parser for that and I avoid writing regexes whenever possible. I'm fine with have one extra command in my process (for now 🙃).
