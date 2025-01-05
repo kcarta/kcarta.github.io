@@ -104,7 +104,7 @@ Now, I have a new routine:
 3. Convert Notion's Markdown into Org[^4]
 ![Meal plan in Org](/static/img/posts/meal-plan-org.png)
 
-4. Run the function to send the list items to Apple Reminders:
+4. Run the command to send the list items to Apple Reminders:
 ![Command to send meal plan items to Apple Reminders](/static/img/posts/meal-plan-command.png)
 
 5. Go shopping! 🛒
