@@ -60,7 +60,7 @@ With a deal great more iterations and head-scratching, I managed to make a scrip
 3. Gets the content of the list items and pushes it into a list
 4. For each item in the list of content, calls AppleScript to add it to the Apple Reminders "Shopping" list.
 
-> Sidebar: The hardest part in my Emacs learning has been finding a good reference flow for Emacs / library API's. I know I can look things up in Emacs with C-h, but if I don't *know* what to look up, then I end up online and searching around aimlessly. This [Org Element API](https://orgmode.org/worg/dev/org-element-api.html) is quite helpful, but I wish I knew how to find it in Emacs and I still wish it were better organized and more detailed. [I'm used to things like this](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/aop/framework/autoproxy/target/AbstractBeanFactoryBasedTargetSourceCreator.html), where even if the subject is...arcane..., I'm presented with *everything* I need to know and with copious links to explore further, and everything here is usually 1:1 with the help my editor presents.
+> Sidebar: The hardest part in my Emacs learning has been finding a good reference flow for Emacs / library API's. I know I can look things up in Emacs with C-h, but if I don't *know* what to look up, then I end up online and searching around aimlessly. This [Org Element API](https://orgmode.org/worg/dev/org-element-api.html) is quite helpful, but I wish I knew how to 'discover' it in Emacs, and I still wish it were better organized and more detailed (without being able to put my finger on what exactly I feel like I'm missing).
 
 The script:
 ```elisp
