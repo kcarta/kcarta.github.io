@@ -30,7 +30,7 @@ Take these as a sort of heuristic for answering *should I stay or should I go?*,
   - a lunatic?
   - an actual person, genuinely participating?
   - an expert, giving referenceable information?
-  - confidently ignorant?
+  - a confident ignoramus?
 - What incentives & disincentives does a commenter on this site have:
   - For being insightful?
   - For being funny?
