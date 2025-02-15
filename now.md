@@ -4,50 +4,43 @@ title: Now
 permalink: /now/
 ---
 
-Updated 3rd December, 2024, from Aarhus, DK 🇩🇰
+Updated 15th February, 2025, from Aarhus, DK 🇩🇰
 
 ## What I'm Doing Now
 
-Enjoying the final month of my 3.5-month paternity leave 👨🏻‍🍼 In awe of every smile and coo 🥰 
+Working full-time at [Trifork Smart Enterprise](https://trifork.com/work/smart-enterprise/), having fun tracking developments in enterprise IT dept's & how they're beginning to adopt durable (Gen-)AI initiatives.
 
-Finding small pockets of time for 'dad projects' around the house 🛠️ or hacking on one of my too-many app projects 👨🏻‍💻
+Taking things one day at a time after returning back to work after a glorious ~4 month paternity leave 👨🏻‍🍼Still in awe of every smile and coo 🥰 
 
-No complaints!
+Trying to figure out how to do anything productive with the new demands on my time & energy. Tired, so tired 😪 
 
 ## What I'm Working With
 
-(Work on hold, excited to return in January!)
+### Work:
+- Leading product development on a big custom enterprise data platform, in my typical "many hats" consultant role as PO, PM, analyst / solution arch, etc.
+- Picking up our cross-office 'delivery guild' and facilitating preparation of a robust and (most importantly) useful delivery framework.
+- Acting as a 'team lead', representing a handful of co-workers in their well-being & development at work, and more general HR-ish matters.
 
-Hobby projects (ranked by time spent):
-- This site!
-- Neverending [Emacs config](https://github.com/kcarta/.emacs.d)-tweaking
-- Flutter app for consuming feed-style emails (repo private, not ready to share yet!)
-  - Consolidating all my email-based feeds into my new [anonymous email account](https://en.wikipedia.org/wiki/George_P._Burdell)
-- [Rails 8](https://rubyonrails.org/2024/11/7/rails-8-no-paas-required) 
+### Hobby projects (ranked by time spent):
+- Investigating how my mental state and environment impact how & what I can reasonably expect to be able to consume and produce. Some posts on the way!
+- [Learning Elisp](https://www.gnu.org/software/emacs/manual/html_mono/eintr.html), in an attempt to up my Emacs game from noob to intermediate.
 
 ## What I'm Consuming
 
 ### Reading
 
-- [The Inmates Are Running the Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity](https://www.goodreads.com/book/show/6644061-the-inmates-are-running-the-asylum)
-- [The Wheel of Time](https://en.wikipedia.org/wiki/The_Wheel_of_Time) series, book 6: Lord of Chaos 
-- (Soon!) [Stormlight Archive](https://www.brandonsanderson.com/pages/the-stormlight-archive-series) Book 5: Wind and Truth
+- [Is This Anything?](https://en.wikipedia.org/wiki/Is_This_Anything%3F_(book)) by Jerry Seinfeld.
+- [The Wheel of Time](https://en.wikipedia.org/wiki/The_Wheel_of_Time) series, book 6: Lord of Chaos.
+- (Just Finished!) [Stormlight Archive](https://www.brandonsanderson.com/pages/the-stormlight-archive-series) Book 5: Wind and Truth.
 
 ### Watching
 
-- [Twin Peaks Season 3](https://www.imdb.com/title/tt4093826/)
-- Director filmographies:
-  - Wrapping up: [Nora Ephron](https://www.imdb.com/name/nm0001188/) (Sleepless in Seattle: top 3 personal movie?)
-  - Just wrapped up: [Michael Mann](https://www.imdb.com/name/nm0000520/) ❤️‍🔥
-  - Up next: [John Singleton](https://www.imdb.com/name/nm0005436/)
+- Music videos on Spotify! Curated mega-playlists with hundreds of songs, for [the 80s](https://open.spotify.com/playlist/4uXK0vy0kPt0jYGb3lh1Sc?si=cb620b61a78545eb), [90s](https://open.spotify.com/playlist/1MqdXFGWYDVKPu0YVgOSlr?si=16e74959ebed443b), and across [all my favorites](https://open.spotify.com/playlist/1S5TNImJ4EdgdWy5hz2psj?si=d72c64c12f7e421e).
+- Spielberg's early filmography (from Duel up through Schindler's List), for the [Blank Check Podcast](http://blankcheckpod.com).
+- Re-re-re-re-binging Seinfeld 😁 
 
 ### Listening
 
-- [Blank Check Podcast](https://www.blankcheckpod.com/), 472 down, 35 remaining (main feed)!
-- [New Kim Deal album](https://open.spotify.com/album/6MygjJ2a8narXmZnk9ifKp)
-- [Chappell Roan](https://www.youtube.com/channel/UCTKTRVaWrythRIGNfZYBp2A)
-
-
-
-
-
+- [Blank Check Podcast](https://www.blankcheckpod.com/)
+- See 'Music videos' above ^ 
+- [Sonic 2 lofi remixes](https://www.youtube.com/watch?v=fSOgJ0Vnn1Q), because my brain state is *not great* these days!
