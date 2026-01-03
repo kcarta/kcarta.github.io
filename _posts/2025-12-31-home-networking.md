@@ -5,6 +5,22 @@ date:   2025-12-31 00:00:00 +0000
 tags: []
 ---
 
+Two short months after moving in, I finally managed to find the time to put together a useful home networking & smart home solution.
+
+Before I started shelling out for new equipment, I put together a list of needs and wants:
+
+Needs:
+- Reliable, high-speed internet across the house (ca. 200 square meters, with plenty of brick & concrete separating floors & sections).
+- Temperature & humidity sensors in every room, so I can see the immediate status but also to gather & analyse data.
+- Ability to segregate 'smart' internet-reliant devices on a secured VLAN.
+- Additional sensors like doors & windows and leak detectors, so I can have a (thin) layer of security
+- Ability to check the status of my house sensors when away.
+
+Wants:
+- Additional sensors:
+  - Doors & windows, which I can correlate with the climate sensors to see what affect airing out the various sections of the house have. In addition, until I have cameras up, it would be nice to have a thin layer of intrusion detection.
+- Opportunities to brush up my networking skills and 
+
 ## Network devices
 
 ### Router
@@ -28,6 +44,8 @@ The router sits in a central position in the basement in the corner of the laund
 ## Smart devices
 
 ## Home Assistant
+
+I took my Raspberry Pi 5, 
 
 ## Protections
 
