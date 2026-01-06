@@ -5,16 +5,20 @@ date:   2025-12-31 00:00:00 +0000
 tags: []
 ---
 
-Two short months after moving into a new (old) house, I finally managed to find the time to put together a useful home networking & smart home solution.
+Two short months after moving into a new (old) house, I found some time to set up a useful home networking & smart home system.
 
-Before I could start shelling out for new equipment, I had time to think up the following goals, roughly in order:
+My networking skills are firmly "DIY" - that is, higher than any layperson, lower than any networking professional. My experience mostly comes from server & devops admin work now long in the past, plus scraps of knowledge from school. 
 
-- Reliable, high-speed internet across the house (ca. 200 square meters, with plenty of brick & concrete separating floors & sections).
-- Temperature & humidity sensors in every room, so I can see the immediate status but also to gather & analyse data.
+My goals, roughly prioritised:
+
+- "Seamless" high-speed internet across the house (ca. 200 square meters, with plenty of brick & concrete separating floors & sections).
+- Climate sensors in every room, with the immediate status as a top priority and data fogather & analyse data.
 - Ability to segregate 'smart' internet-reliant devices on a secured VLAN, like the TV, washer, dryer, etc.
 - Additional sensors like doors & windows and leak detectors, so I can have a (thin) layer of security
 - Ability to check the status of my sensors when away from home
 - Have fun & learn while building a maintainable, extensible platform that can serve us for years to come.
+
+I also prioritised getting to a quick initial baseline, as I had a couple waves of family visiting, followed by a long holiday travel period where I wanted the ability to monitor the state of the house from afar.
 
 ## Network devices
 
