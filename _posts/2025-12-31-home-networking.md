@@ -5,20 +5,26 @@ date:   2025-12-31 00:00:00 +0000
 tags: []
 ---
 
-Two short months after moving into a new (old) house, I found some time to set up a useful home networking & smart home system.
+Two short months after moving into my new (old) house, I now have a basic home networking & smart home setup in place.
 
-My networking skills are firmly "DIY" - that is, higher than any layperson, lower than any networking professional. My experience mostly comes from server & devops admin work now long in the past, plus scraps of knowledge from school. 
+This post documents my current setup, with some thoughts on how the process has gone and plans for the future.
+
+My networking skills are firmly "DIY" - that is, I know much more than most people, and much less than any networking professional. My experience mostly comes from server & devops admin work now long in the past, plus scraps of knowledge remembered from school.
 
 My goals, roughly prioritised:
 
 - "Seamless" high-speed internet across the house (ca. 200 square meters, with plenty of brick & concrete separating floors & sections).
-- Climate sensors in every room, with the immediate status as a top priority and data fogather & analyse data.
-- Ability to segregate 'smart' internet-reliant devices on a secured VLAN, like the TV, washer, dryer, etc.
-- Additional sensors like doors & windows and leak detectors, so I can have a (thin) layer of security
-- Ability to check the status of my sensors when away from home
-- Have fun & learn while building a maintainable, extensible platform that can serve us for years to come.
+- Climate sensors in every room, with live status as a top priority and data gathering & potential for analysis as a close second.
+- Ability to segregate 'smart' devices away from the main networ, like the TV, washer, dryer, etc.
+- Additional sensors like doors & windows and leak detectors, mostly to supplement the data from the climate sensors.
+- Ability to check the status of my sensors when away from home.
+- Get to a technical baseline that is maintainable and extensible enough to serve us for years to come.
 
-I also prioritised getting to a quick initial baseline, as I had a couple waves of family visiting, followed by a long holiday travel period where I wanted the ability to monitor the state of the house from afar.
+I spent about two weeks getting this initial baseline in place, mostly in the small pockets of time one has as a quick initial baseline, as I had a couple waves of family visiting, followed by a long holiday travel period where I wanted the ability to monitor the state of the house from afar.
+
+## Smart devices
+
+The first step I took was to go out and buy *all the sensors*, filling up a shopping cart in Ikea with 65 different sensors from their new Matter-
 
 ## Network devices
 
@@ -26,10 +32,9 @@ I also prioritised getting to a quick initial baseline, as I had a couple waves 
 
 Unifi Dream Router 7
 
-My first step was to replace my 'old' [Asus Router](https://www.asus.com/dk/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax59u/) with my first piece of Unifi equipment - a Dream Router 7.
+The most impactful change I made was to replace my 'old' [Asus Router](https://www.asus.com/dk/networking-iot-servers/wifi-routers/asus-wifi-routers/rt-ax59u/) with my first piece of Unifi equipment - a Dream Router 7.
 
-I went with the DR7 because it 
-Also, on the product page, the example topography matched exactly with what I envisioned for my network (sans Home Assistant and the mesh under it):
+ the example topography matched exactly with what I envisioned for my network (sans Home Assistant and the mesh under it):
 ![Network topography example for a router](/static/img/posts/unifi-page-topography.png)
 
 The first 
