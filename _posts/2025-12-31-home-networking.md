@@ -49,7 +49,11 @@ The router sits in a central position in the basement in the corner of the laund
 
 ## Home Assistant
 
-I took my Raspberry Pi 5, 
+The easiest part of the entire solution was getting Home Assistant up on my Raspberry Pi 5.
+
+I purchased a decent SD card, flashed it with the Home Assistant OS, hooked it up to my router via an ethernet cable, and it all worked immediately.
+
+Setup was also a breeze. After a few weeks of intense use, I can see some of the cracks in the UI/UX, but anything I don't have in place is mostly a function of lack of time, and not lack of ability or power in the platform itself.
 
 ## Protections
 
