@@ -12,9 +12,9 @@ layout: default
     <script>
       // Simple handler - I know it's not kosher to place script code inline with elements, doing this for my own sanity when coming back to maintain this input...
       document.getElementById("showPosts").addEventListener("change", (e) => {
-        document.querySelectorAll("li a").forEach((post) => {
+        document.querySelectorAll("ul.posts > li").forEach((post) => {
 	    if (post.textContent.includes("Weekly update")) {
-		post.parentElement.hidden = !e.target.checked;
+		post.hidden = !e.target.checked;
 	    }
         });
       });
