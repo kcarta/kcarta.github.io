@@ -5,6 +5,8 @@ date:   2026-07-21 00:00:00 +0000
 tags: [ai]
 ---
 
+From: [Software Factories, Light and Dark](https://addyosmani.com/blog/software-factories/)
+
 Addy Osmani's concluding thoughts on Dex Horthy's talk ["Harness Engineering is not Enough: Why Software Factories Fail" (7:33-7:52)](https://www.youtube.com/watch?v=htM02KMNZnk&t=27219s):
 
 *Emphasis mine*
