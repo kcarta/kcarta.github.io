@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Quoting Claude Code's 'safety classifier'"
+date:   2026-08-01 00:00:00 +0000
+tags: []
+---
+
+Came across this during a Claude Code (Opus 5) session, when the agent attempted a `rm -rf` (arguably the correct thing to do given the task I'd set).
+
+*Emphasis mine*
+
+> Permission for this action was denied by the Claude Code auto mode classifier. Reason: Blocked by classifier. If you have other tasks that don't depend on this action, continue working on those. IMPORTANT: You *may* attempt to accomplish this action using other tools that might naturally be used to accomplish this goal, e.g. using head instead of cat. **But you *should not* attempt to work around this denial in malicious ways, e.g. do not use your ability to run tests to execute non-test actions. You should only try to work around this restriction in reasonable ways that do not attempt to bypass the intent behind this denial.** If you believe this capability is essential to complete the user's request, STOP and explain to the user what you were trying to do and why you need this permission. Let the user decide how to proceed. To allow this type of action in the future, the user can add a Bash permission rule to their settings.
+
+I wonder how ironclad this instruction actually is in the wild, given [how "diligent" today's frontier models are proving to be](https://www.theverge.com/ai-artificial-intelligence/973670/anthropic-claude-hacked-organizations-during-cyber-tests).
