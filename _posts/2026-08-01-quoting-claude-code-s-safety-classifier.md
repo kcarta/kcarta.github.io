@@ -2,7 +2,7 @@
 layout: post
 title:  "Quoting Claude Code's 'safety classifier'"
 date:   2026-08-01 00:00:00 +0000
-tags: []
+tags: [ai]
 ---
 
 Came across this during a Claude Code (Opus 5) session, when the agent attempted a `rm -rf` (arguably the correct thing to do given the task I'd set).
