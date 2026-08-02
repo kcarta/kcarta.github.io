@@ -13,8 +13,8 @@ Working at [Trifork](https://trifork.com/), now on a longer-term engagement as a
 ## What I'm Working With
 
 ### Work:
-- Working with a single customer (for the first time in my 7+ years as a consultant) in a process coaching & facilitation role (roughly, a Scrum Master). Learning a lot about how smaller organizations handle change, pressure, and politics 🕵🏻‍♂️ 
-- Looking at how our cross-office 'delivery guild' can work out a sustainable set of practices around product support.
+- Working with a single customer (for the first time in my 7+ years as a consultant) in a process coaching & facilitation role. Learning a lot about how smaller organizations handle change, pressure, and politics 🕵🏻‍♂️ 
+- Looking at how our cross-office 'delivery guild' can work out a sustainable set of practices around product support and development on modern SAP S/4HANA setups .
 - Acting as a 'team lead', representing a handful of co-workers in their well-being & development at work, and more general HR-ish matters.
 
 ### Hobby projects (ranked by time spent):
