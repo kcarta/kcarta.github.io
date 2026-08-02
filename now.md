@@ -36,5 +36,5 @@ Working at [Trifork](https://trifork.com/), now on a longer-term engagement as a
 ### Listening
 
 - Slayyyter - WOR$ST GIRL IN AMERICA 🎶🎧
-- [Blank Check Podcast](https://www.blankcheckpod.com/), only 3 movies/episodes remain unwatched out of 
+- [Blank Check Podcast](https://www.blankcheckpod.com/), only 3 movies/episodes remain unwatched out of nearly 800.
 - [Doughboys Podcast](https://headgum.com/doughboys)
