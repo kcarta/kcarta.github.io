@@ -4,7 +4,7 @@ title: Now
 permalink: /now/
 ---
 
-Updated 31 December, 2025, on holiday in Moldova 🇲🇩🍷
+Updated 1 August, 2026, at home in Aarhus.
 
 ## What I'm Doing Now
 
@@ -14,28 +14,27 @@ Working at [Trifork](https://trifork.com/), now on a longer-term engagement as a
 
 ### Work:
 - Working with a single customer (for the first time in my 7+ years as a consultant) in a process coaching & facilitation role (roughly, a Scrum Master). Learning a lot about how smaller organizations handle change, pressure, and politics 🕵🏻‍♂️ 
-- Re-picking up our cross-office 'delivery guild' and preparing some new templates for when we initially size and frame a delivery.
+- Looking at how our cross-office 'delivery guild' can work out a sustainable set of practices around product support.
 - Acting as a 'team lead', representing a handful of co-workers in their well-being & development at work, and more general HR-ish matters.
 
 ### Hobby projects (ranked by time spent):
-- Working on my new (old) house 🏡
-- Setting up a 'smart' home based on Ubiquiti's Unifi platform and Home Assistant.
-- Getting back into Emacs and blogging.
+- Home repairs and heavy-duty landscaping - taking "touch grass" too literally.
+- Processing several years of notes and starred RSS feed items into a LLM-powered personal knowledge base, inspired by [Andrej Karpathy's LLM wiki concept](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+- Vibe coding family apps, everything from our monthly budget tracking to a locked-down Android tablet app platform for my toddler. Personal computing for the win!
 
 ## What I'm Consuming
 
 ### Reading
 
-- Re-reading [Caesar, Life of a Colossus](https://en.wikipedia.org/wiki/Caesar,_Life_of_a_Colossus), by Adrian Goldsworthy
-- Followed very likely by a re-read of [Augustus: First Emperor of Rome](https://www.goodreads.com/book/show/20949792-augustus), also by Adrian Goldsworthy
+- Lord of the Rings series (starting with The Hobbit) in Danish ("Ringenes Herre"). Currently mid-way through De to Tårne. 
 
 ### Watching
 
-- Re-watching the [Avatar: the Last Airbender](https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender) series, little by little when we have time in the evenings.
-- Music videos on Spotify! Curated mega-playlists with hundreds of songs, for [the 80s](https://open.spotify.com/playlist/4uXK0vy0kPt0jYGb3lh1Sc?si=cb620b61a78545eb), [90s](https://open.spotify.com/playlist/1MqdXFGWYDVKPu0YVgOSlr?si=16e74959ebed443b), and across [all my favorites](https://open.spotify.com/playlist/1S5TNImJ4EdgdWy5hz2psj?si=d72c64c12f7e421e).
+- Gene Kelly's classics, so far Singing in the Rain and American in Paris. My toddler is obsessed with 40's/50's/60's musicals (really anything with Judy Garland, Gene Kelly, or Julie Andrews). Can't complain!
+- WALL-E on repeat (see above).
 
 ### Listening
 
-- [Hounds of Love by Kate Bush](https://en.wikipedia.org/wiki/Hounds_of_Love), on repeat for months
-- [Blank Check Podcast](https://www.blankcheckpod.com/), my ongoing weekly project of 5+ years
+- Slayyyter - WOR$ST GIRL IN AMERICA 🎶🎧
+- [Blank Check Podcast](https://www.blankcheckpod.com/), only 3 movies/episodes remain unwatched out of 
 - [Doughboys Podcast](https://headgum.com/doughboys)
