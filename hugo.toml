@@ -1,0 +1,85 @@
+baseURL = "https://www.kriscarta.com/"
+title = "Kris Carta's personal blog"
+locale = "en"
+disableKinds = ["section", "taxonomy", "rss"]
+buildFuture = true
+capitalizeListTitles = false
+timeZone = "Etc/UTC"
+
+[params]
+description = "Personal Site and Blog"
+author = "Kris Carta"
+tagline = "Hi, I'm Kris"
+github = "https://github.com/kcarta"
+about = "I'm a software nerd, and this is my space for exploring *everything* from tech to leadership. Have a comment? Hit me up on social media!"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "linkedin"
+link = "https://www.linkedin.com/in/kriscarta"
+[[params.social]]
+name = "GitHub"
+icon = "github"
+link = "https://github.com/kcarta"
+[[params.social]]
+name = "Bluesky"
+icon = "bluesky"
+link = "https://bsky.app/profile/krc22.bsky.social"
+[[params.social]]
+name = "RSS feed"
+icon = "rss"
+link = "/feed.xml"
+
+[[menus.main]]
+name = "About"
+url = "/about/"
+weight = 1
+[[menus.main]]
+name = "Now"
+url = "/now/"
+weight = 2
+
+[taxonomies]
+tag = "tags"
+
+[permalinks.page]
+posts = "/posts/:slug/"
+[permalinks.term]
+tags = "/tag/:slug/"
+
+[frontmatter]
+date = [":filename", ":default"]
+
+[pagination]
+pagerSize = 20
+
+[outputFormats.feed]
+mediaType = "application/rss+xml"
+baseName = "feed"
+[outputFormats.emacsfeed]
+mediaType = "application/rss+xml"
+baseName = "feed-emacs"
+
+[outputs]
+home = ["html", "feed", "emacsfeed"]
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noClasses = false
+
+[[module.mounts]]
+source = "content"
+target = "content"
+[[module.mounts]]
+source = "layouts"
+target = "layouts"
+[[module.mounts]]
+source = "assets"
+target = "assets"
+[[module.mounts]]
+source = "static"
+target = "static/static"
+[[module.mounts]]
+source = "CNAME"
+target = "static/CNAME"

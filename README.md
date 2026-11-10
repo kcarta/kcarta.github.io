@@ -1,54 +1,49 @@
 # kriscarta.com
 
-Source for [kriscarta.com](https://www.kriscarta.com). Jekyll 4, deployed to GitHub Pages via Actions on push to `master`.
+Source for [kriscarta.com](https://www.kriscarta.com). Hugo, deployed to GitHub Pages via Actions on push to `master`.
 
 ## Local dev
 
 ```sh
-bundle install
-bundle exec jekyll serve   # http://127.0.0.1:4000
+brew install hugo
+hugo server -D   # http://localhost:1313, -D includes drafts
 ```
 
-Restart on `_config.yml` changes.
+CI pins the Hugo version in `.github/workflows/deploy.yml`.
 
 ## New post
 
-`_posts/YYYY-MM-DD-slug.md`:
+`content/posts/YYYY-MM-DD-slug.md` (URL `/posts/slug/`, date from the filename):
 
 ```yaml
 ---
-layout: post
 title:  "The title"
 date:   2026-05-21 00:00:00 +0000
 tags: [thoughts, ai]
 ---
 ```
 
-Drafts = untracked files in `_posts/`. Push when ready.
+Link to another post: `[text]({{< relref "2024-11-18-rad-llms.md" >}})` (build fails if it doesn't exist).
+
+Drafts = untracked files in `content/posts/`, or `draft: true`. Push when ready.
 
 ## Tags
 
-Current: `agile-pm`, `ai`, `emacs`, `integrations`, `non-software`, `reading`, `teams`, `testing`, `thoughts`, `tools`.
+Any tag in front matter gets a `/tag/<name>/` page.
 
-To add a new one, create `tag/foo.md`, or `/tag/foo` 404s:
+## Feeds
 
-```yaml
----
-layout: posts_by_tag
-tags: foo
-title: foo
-permalink: /tag/foo
----
-```
+`/feed.xml` (last 10) and `/feed-emacs.xml` (last 10 tagged `emacs`, read by Planet Emacslife), both from `layouts/_partials/rss.xml`.
+Item guid/link/pubDate must not change, or readers re-show old posts. CI runs `.github/scripts/check-feeds.py` against the live feeds before deploying.
 
 ## Layout
 
-- `_layouts/` — `default`, `page`, `post`, `posts_by_tag`
-- `_posts/` — posts (+ untracked drafts)
-- `tag/` — one stub per tag
-- `static/img/posts/` — post images
-- `.github/workflows/jekyll.yml` — build + deploy
+- `content/posts/` — posts; `content/about.md`, `content/now.md`
+- `layouts/` — `baseof`, `home`, `page`, `posts/page`, `term` (tag pages), feeds
+- `static/` — served at `/static/`: `css/main.css` (plain CSS), post images in `img/posts/`
+- `assets/icons/` — social icon SVGs, inlined by `layouts/_partials/icon.html`
+- `.github/workflows/deploy.yml` — build, feed check, deploy
 
 ## Credits
 
-Forked from [agusmakmun/agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io).
+Originally forked from [agusmakmun/agusmakmun.github.io](https://github.com/agusmakmun/agusmakmun.github.io).

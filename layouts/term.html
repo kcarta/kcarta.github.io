@@ -1,0 +1,29 @@
+{{ define "main" }}
+<header class="post-header">
+  <h1 class="post-title">Articles by tag: {{ .Title }}</h1>
+</header>
+
+<div class="post-content">
+  <hr />
+  <div class="tag-list">
+  {{ $current := .Data.Term }}
+  {{ range $name, $_ := site.Taxonomies.tags }}
+    {{ if eq $name $current }}
+      <span aria-current="page">{{ $name }}</span>
+    {{ else }}
+      <a href="/tag/{{ $name }}/">{{ $name }}</a>
+    {{ end }}
+  {{ end }}
+  </div>
+
+  <hr />
+  {{ range .Pages.GroupByDate "2006" }}
+    <h4>{{ .Key }}</h4>
+    <ul class="posts">
+      {{ range .Pages }}
+      <li>{{ .Date.Format "02/01/06" }} &raquo; <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,53 @@
+{{ define "main" }}
+<header class="post-header">
+  <h1 class="post-title">{{ .Title }}</h1>
+</header>
+
+<div class="post-meta">
+  <span class="time">{{ .Date.Format "02 Jan 2006" }}</span>
+  {{ with .Params.tags }}
+    <span class="tags">
+      &raquo; {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="/tag/{{ $t }}/">{{ $t }}</a>{{ end }}
+    </span>
+  {{ end }}
+</div>
+
+<div class="content">
+  <div class="post">{{ .Content }}</div>
+</div>
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $related := slice }}
+{{ with .Params.tags }}
+  {{ $tags := . }}
+  {{ range $posts }}
+    {{ if and (ne . $) (lt (len $related) 6) (intersect $tags (.Params.tags | default slice)) }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ with $related }}
+<div class="related">
+  <h4>Related Posts</h4>
+  <ul>
+    {{ range . }}
+    <li class="relatedPost">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Params.tags }}
+        (Tags: {{ range $i, $t := . }}{{ if $i }}, {{ end }}<a href="/tag/{{ $t }}/">{{ $t }}</a>{{ end }})
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+
+<nav class="page-nav">
+  {{ with $posts.Prev . }}
+    <a class="prev" href="{{ .RelPermalink }}">&laquo; {{ .Title }}</a>
+  {{ end }}
+  {{ with $posts.Next . }}
+    <a class="next" href="{{ .RelPermalink }}">{{ .Title }} &raquo;</a>
+  {{ end }}
+</nav>
+{{ end }}

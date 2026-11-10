@@ -1,0 +1,4 @@
+{{- partial "rss.xml" (dict
+  "posts" (site.Taxonomies.tags.emacs.Pages | default slice)
+  "title" (printf "%s- Emacs" site.Title)
+  "self" "/feed-emacs.xml") -}}

@@ -1,9 +1,8 @@
 .DS_Store
 
-_site*
-.sass-cache
-.jekyll-metadata
-.jekyll-cache/
+public/
+resources/_gen/
+.hugo_build.lock
 *backup/
 
 # Gauge - metadata dir

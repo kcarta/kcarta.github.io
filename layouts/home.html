@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div id="home">
+  <h1>{{ site.Title }}</h1>
+  <hr />
+
+  <h2>Blog posts:</h2>
+    <label class="show-weekly"><input type="checkbox" id="showPosts" checked /> Show Weekly Updates</label>
+    <script>
+      // Simple handler - I know it's not kosher to place script code inline with elements, doing this for my own sanity when coming back to maintain this input...
+      document.getElementById("showPosts").addEventListener("change", (e) => {
+        document.querySelectorAll("ul.posts > li").forEach((post) => {
+	    if (post.textContent.includes("Weekly update")) {
+		post.hidden = !e.target.checked;
+	    }
+        });
+      });
+    </script>
+  {{ $pager := .Paginate (where site.RegularPages "Section" "posts") }}
+  <ul class="posts">
+    {{ range $pager.Pages }}
+    <li>
+      {{ .Date.Format "02/01/06" }} &raquo;
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
+  <!-- Pagination links -->
+  {{ if gt $pager.TotalPages 1 }}
+  <ul class="pagination">
+    {{ with $pager.Prev }}<li><a href="{{ .URL }}">&laquo;</a></li>{{ end }}
+    {{ range $pager.Pagers }}
+      {{ if eq . $pager }}
+    <li><span aria-current="page">{{ .PageNumber }}</span></li>
+      {{ else }}
+    <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+      {{ end }}
+    {{ end }}
+    {{ with $pager.Next }}<li><a href="{{ .URL }}">&raquo;</a></li>{{ end }}
+  </ul>
+  {{ end }}
+</div>
+<!-- end #home -->
+{{ end }}

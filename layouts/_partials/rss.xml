@@ -1,0 +1,31 @@
+{{- /* RSS 2.0 feed. Args: posts, title, self (path).
+  Item guid/link/pubDate/title must stay byte-identical to what readers have seen
+  (Planet Emacslife reads /feed-emacs.xml); .github/scripts/check-feeds.py checks this in CI. */ -}}
+{{- $base := strings.TrimSuffix "/" site.BaseURL -}}
+{{- $rfc822 := "Mon, 02 Jan 2006 15:04:05 -0700" -}}
+{{ printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ partial "xml-escape" .title | safeHTML }}</title>
+    <description>{{ partial "xml-escape" site.Params.description | safeHTML }}</description>
+    <link>{{ site.BaseURL }}</link>
+    <atom:link href="{{ $base }}{{ .self }}" rel="self" type="application/rss+xml"/>
+    <pubDate>{{ now.UTC.Format $rfc822 | safeHTML }}</pubDate>
+    <lastBuildDate>{{ now.UTC.Format $rfc822 | safeHTML }}</lastBuildDate>
+    <generator>Hugo v{{ hugo.Version }}</generator>
+    {{- range first 10 .posts }}
+    {{- $url := strings.TrimSuffix "/" .Permalink }}
+    {{- $content := replace (replace .Content "src=\"/" (printf "src=\"%s/" $base)) "href=\"/" (printf "href=\"%s/" $base) }}
+    <item>
+      <title>{{ partial "xml-escape" .Title | safeHTML }}</title>
+      <description>{{ partial "xml-escape" $content | safeHTML }}</description>
+      <pubDate>{{ .Date.UTC.Format $rfc822 | safeHTML }}</pubDate>
+      <link>{{ $url }}</link>
+      <guid isPermaLink="true">{{ $url }}</guid>
+      {{- range .Params.tags }}
+      <category>{{ partial "xml-escape" . | safeHTML }}</category>
+      {{- end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>

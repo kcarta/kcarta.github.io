@@ -1,0 +1,58 @@
+name: Build and deploy Hugo site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+    inputs:
+      skip_feed_check:
+        description: "Skip the feed check (only when deliberately removing/renaming a recent post)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: 0.168.0
+  HUGO_SHA256: 787f100057328824f38c6ad7c87ff10d6451ae0a7bc39cedaad0dd2bcde17e53
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Hugo
+        run: |
+          curl -sSfL -o hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"
+          echo "${HUGO_SHA256}  hugo.tar.gz" | sha256sum -c -
+          mkdir -p "$HOME/.local/bin"
+          tar -xzf hugo.tar.gz -C "$HOME/.local/bin" hugo
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - run: hugo --environment production
+
+      - name: Check feeds won't re-send old posts
+        if: ${{ !inputs.skip_feed_check }}
+        run: python3 .github/scripts/check-feeds.py public
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

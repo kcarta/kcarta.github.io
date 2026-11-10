@@ -1,0 +1,4 @@
+{{- partial "rss.xml" (dict
+  "posts" (where site.RegularPages "Section" "posts")
+  "title" site.Title
+  "self" "/feed.xml") -}}

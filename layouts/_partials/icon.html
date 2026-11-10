@@ -1,0 +1,6 @@
+{{- /* Inline an SVG from assets/icons/<name>.svg. Icons are Font Awesome Free (CC BY 4.0, attribution kept in each file). */ -}}
+{{- with resources.Get (printf "icons/%s.svg" .) -}}
+  {{- replace .Content "<svg " "<svg aria-hidden=\"true\" " | safeHTML -}}
+{{- else -}}
+  {{- errorf "missing icon: assets/icons/%s.svg" . -}}
+{{- end -}}
